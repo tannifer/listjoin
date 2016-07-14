@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+    <meta charset="utf-8"/>
+    <title>University of St Andrews - Scotland&#x27;s first university, founded 1413</title>
+    <link rel="canonical" href="http://www.st-andrews.ac.uk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="copyright" content="Copyright (c) 2015 University of St Andrews"/>
+    <meta name="rating" content="general"/>
+    <meta name="dc.keywords" content="University"/>
+
+    <link href="http://www.st-andrews.ac.uk/~cdn/dpl/0.5.3/styles/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="http://www.st-andrews.ac.uk/~cdn/dpl/0.5.3/styles/print.css" rel="stylesheet" type="text/css" media="print"/>
+	<link href="http://www.st-andrews.ac.uk/~cdn/dpl/0.5.3/styles/datatables.css" rel="stylesheet" type="text/css" media="print"/>
+    <!--[if lt IE 9]>
+    <link href="//www.st-andrews.ac.uk/~cdn/dpl/0.5.3/styles/ie.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- *********************************** -->
+
+<div class="sr-only">
+    <a class="skip" href="#content-begin">Skip to content</a>
+</div>
+<header class="header-audience container-fluid">
+    <div class="row">
+        <div id="logo-container">
+            <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
+        </div>
+    </div>
+</header>
+
+<a name="content-begin"></a>
+
+<div class="container-fluid" id="main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="content" role="main">
+<!-- *********************************** -->
+
+
+<form>
+  <fieldset>
+    <legend>List concatinator</legend>
+  <span class="label label-default">List A:</span><br>
+    <textarea name="dataA" rows="25" cols="100"></textarea><br>
+  <span class="label label-default">LIST B::</span><br>
+    <textarea name="dataB" rows="25" cols="100"></textarea><br>
+<input class="btn btn-success" type="button" value="Do Magic" onclick="doMagic(dataA,dataB)" >
+</fieldset>
+</form>
+<br>
+
+<br>
+
+<div class="well" id="product">Your output will display here.</div>
+
+<!-- *********************************** -->
+
+</section>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="website-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" id="footer-tools">
+                    <h3>Your St Andrews</h3>
+                    <ul>
+                        <li><a href="http://www.st-andrews.ac.uk/students/">Current students</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/pgstudents/">Postgraduate</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/staff/">Staff</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/vacancies/">Work at St Andrews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4" id="footer-navigation">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="http://www.st-andrews.ac.uk/about/">About</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/study/">Study at St Andrews</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/research/">Research</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/alumni/">Alumni and donors</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/schools/">Schools</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4" id="footer-contact">
+                    <h3><a href="http://www.st-andrews.ac.uk/contact/">Contact us</a></h3>
+                    <address>
+                        <strong>University of St Andrews</strong><br/>
+                        College Gate<br/>
+                        St Andrews, Fife<br/>
+                        KY16 9AJ<br/>
+                        Scotland, UK<br/><br/>
+                        <strong>Phone:</strong> +44 (0)1334 46 6161
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="university-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <c:set var="now" value="<%=new java.util.Date()%>" />
+                    <p id="footer-charity" role="contentinfo">&copy; <fmt:formatDate pattern="yyyy" value="${now}" /> University of St Andrews is a charity registered in Scotland, No SC013532.</p>
+                    <ul id="footer-links">
+                        <li><a href="http://www.st-andrews.ac.uk/terms/cookies/">Privacy and cookies</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/help/">Website help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul id="social">
+                        <li>
+                            <a href="https://www.facebook.com/uniofsta">
+                                <img src="<spring:message code="dpl.link" />/images/furniture/facebook-logo-svg.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/univofstandrews/">
+                                <img src="<spring:message code="dpl.link" />/images/furniture/twitter-logo-svg.svg" alt="Twitter"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="http://www.st-andrews.ac.uk/~cdn/dpl/0.5.3/scripts/doc.js"></script>
+
+<!-- *********************************** -->
+
+</body>
+<!--<script type="text/javascript" src="//www.st-andrews.ac.uk/~cdn/dpl/0.5.1/scripts/core.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//www.st-andrews.ac.uk/~cdn/select2/3.5.2/select2.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="//www.st-andrews.ac.uk/~cdn/md5/md5.min.js"></script>-->
+
+<script type="text/javascript">
+
+    function makeAray(v){
+      var txtArray=v.split('\n');
+      return txtArray;
+    }
+
+    function doMagic(dataA,dataB){
+      var arrayA = makeAray(dataA.value);
+      var arrayB = makeAray(dataB.value);
+      var set1 = new Set(arrayA);
+      // Add values of second array to the Set
+      for(var i=0;i<arrayB.length;i++){
+        set1.add(arrayB[i]);
+      }
+      set1.delete("\n");
+      var combArray = Array.from(set1);
+      renderResult(combArray);
+
+    }
+
+    function renderResult(dataArray) {
+
+      var elements = [];
+      for(var x=0; x < dataArray.length; x++) {
+        var element = dataArray[x] + "<br>";
+
+        elements.push(element);
+      }
+      document.getElementById('product').innerHTML = elements.join("");
+    }
+
+</script>
+
+
+
+
+
+</html>
